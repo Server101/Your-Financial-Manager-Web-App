@@ -1,0 +1,45 @@
+{% extends "home.html" %}
+{% block content %}
+
+  <header id="hero" class="hero">
+      <a href="{{ url_for('index') }}" class="button-8 w-button">Back to Homepage</a>
+
+<br><br><br>
+    <div class="flex-container w-container">
+      <div>
+        <form method="POST" name="my_form" >
+        {{ form.csrf_token }}
+
+
+
+
+        <p>Describe the purchased goods or services:<br>
+            {{ form.description() }}
+
+        </p>
+        <p>Choose a category that is the best match:<br>
+            {{ form.category() }}
+
+        </p>
+
+        <p>What is the price of the expense?<br>
+            {{ form.cost() }}
+        </p>
+            <p>Choose a currency:<br>
+            {{ form.currency() }}
+        </p>
+        <p>What is the purchased date?<br>
+            {{ form.date() }}
+        </p>
+
+
+
+            <p>TO BE COMPLETED</p>
+        <input value="Submit" class="button-8 w-button" type="submit">
+    </form>
+      </div>
+    </div>
+
+  </header>
+
+{% endblock %}

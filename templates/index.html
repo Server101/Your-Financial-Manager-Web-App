@@ -1,0 +1,45 @@
+{% extends "home.html" %}
+{% block content %}
+<!-- Bootstrap div classes -->
+<div class="row">
+                <div class="col-12">
+
+  <header id="hero" class="hero">
+      <title> Your Financial Manager</title>
+    <div class="flex-container w-container">
+      <div>
+        <h1>Add an expense</h1>
+        <a href="{{ url_for('addExpenses') }}" class="button-8 w-button">Add an Expense</a>
+      </div>
+    </div>
+  </header>
+<section id="feature-section" class="feature-section">
+    <div class="flex-container w-container">
+      <div>
+        <h2>Track your expenses</h2>
+
+          <body class="body_main">
+            {% for i in response2 %}
+            <p> {{ i}}</p>
+            {% endfor %}<br>
+
+        <h2>By category</h2>
+
+          {% for i in expensesByCategory %}
+            <p> {{ i}}</p>
+            {% endfor %}
+
+
+
+
+          {% for i in response1 %}
+            <p> {{ i}}</p>
+            {% endfor %}
+          </body>
+      </div>
+    </div>
+  </section>
+
+                </div>
+</div>
+{% endblock %}
