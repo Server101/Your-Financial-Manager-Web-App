@@ -112,57 +112,7 @@ def populateDatabase(description, category, cost, currency, date):
     currency_converter(cost, currency);
     return
 
-    #my_db_holder = conn.db
-
-    #result = my_expenses.insert_one(dataValues)
-    #print(result)
-
-    #cost = my_db_holder.insert_one(cost)
-
-    # result = my_expenses.insert_one()
-    # result2 = my_expenses.insert_one(date, description, cost, date[2])
-    # my_expenses.insert_many(response[4])
-
-       # # database
-    #my_db_holder = conn.db
-
-    # Created or Switched to collection names: my_gfg_collection
-    #collection = my_db_holder.expense
-
-    # Insert Data
-    #description = collection.insert_one(description)
-    #cost = collection.insert_one(cost)
-
-    #print("Data inserted with record ids", description, " ", cost)
-
-    # Printing the data inserted
- #   cursor = collection.find()
-  #  for record in cursor:
-  #      print(record)
-
-    # my_expenses = mongo.db.expense.find()
-
-    # For loop to populate database
-
-
-# for i in my_expenses:
-#    print("Course {0} has {1} students enrolled.".format(i["description"], i["cost"]))
-#  total_values = 0
-#     total_values += float(i["cost"])
-#   result = my_expenses.insert_one(1)
-
-
-# description = description.__dict__
-# category = category.__dict__
-# cost = cost.__dict__
-# date = date.__dict__
-
-
-# result = my_expenses.insert_one()
-# result2 = my_expenses.insert_one(date, description, cost, date[2])
-# my_expenses.insert_many(response[4])
-#  print(result)
-# result = courses.insert_one(my_courses[0])
+   
 
 
 @app.route("/addExpenses", methods=['GET', 'POST'])
