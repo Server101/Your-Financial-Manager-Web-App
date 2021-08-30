@@ -5,10 +5,6 @@ def save_to_file(data,file_name):
         json.dump(data,write_file,indent=2)
         print("You sucessfully saved to {}.".format(file_name))
 
-def read_from_file(file_name):
-    with open(file_name,"r") as read_file:
-        data=json.load(read_file)
-        print("You successfully read from {}.".format(file_name))
-        return data
+
 
 
